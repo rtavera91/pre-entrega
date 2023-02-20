@@ -1,0 +1,42 @@
+/* ESTILOS GLOBALES */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 3rem;
+}
+
+
+nav {
+    position: sticky;
+}
+
+.barra-nav {
+    color: #fafafa;
+}
+
+/* TESTIMONIALES */
+.testimoniales .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .testimoniales .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+
+
+
+  /* MEDIA QUERIES: PANTALLA CHICA */
+@media (max-width: 375px) {
+    header {
+        display: none;
+    }
+}
+
+  /* MEDIA QUERIES: PANTALLA MEDIA */
+
+
+  /* MEDIA QUERIES PANTALLA GRANDE */
