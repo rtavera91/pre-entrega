@@ -16,6 +16,10 @@ nav {
     color: #fafafa;
 }
 
+.logo {
+    width: 7rem;
+}
+
 /* TESTIMONIALES */
 .testimoniales .col-lg-4 {
     margin-bottom: 1.5rem;
@@ -27,6 +31,12 @@ nav {
   }
 
 
+  /* FOOOTER */
+
+  .redes {
+    color: black;
+  }
+
 
 
   /* MEDIA QUERIES: PANTALLA CHICA */
@@ -34,6 +44,7 @@ nav {
     header {
         display: none;
     }
+
 }
 
   /* MEDIA QUERIES: PANTALLA MEDIA */
