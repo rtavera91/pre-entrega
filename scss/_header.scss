@@ -1,0 +1,31 @@
+/* HEADER */
+
+header{
+  background-color: $color_3;
+}
+
+nav {
+    position: sticky;
+  }
+  .barra-nav {
+    color: $color_1;
+  }
+  .logo {
+    width: 7rem;
+  }
+
+  ul {
+    li{
+      a:hover {
+        scale: 1.03;
+        transition: 500ms;
+      }
+    }
+  }
+
+  @mixin anclas {
+    text-decoration: none;
+    color: $color_1;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+  }
