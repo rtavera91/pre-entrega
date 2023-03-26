@@ -29,6 +29,11 @@ nav {
   width: 7rem;
 }
 
+.nav-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 ul li a:hover {
   scale: 1.03;
   transition: 500ms;
@@ -56,6 +61,14 @@ ul li a:hover {
   max-width: 100%;
 }
 
+.botonWhatsApp img{
+  width: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+
 /* MEDIA QUERIES: PANTALLA CHICA */
 @media (max-width: 375px) {
   header {
@@ -63,6 +76,11 @@ ul li a:hover {
   }
 }
 /* MEDIA QUERIES: PANTALLA MEDIA */
+@media (max-width: 375px) {
+  header {
+    display: none;
+  }
+}
 /* MEDIA QUERIES PANTALLA GRANDE */
 
 /*# sourceMappingURL=estilo.css.map */
