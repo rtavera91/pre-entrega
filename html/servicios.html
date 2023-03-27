@@ -19,6 +19,15 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
+
+    <!-- LIBRERÍA AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+
   </head>
   <body class="container-fluid bg-light">
 
@@ -63,15 +72,15 @@
 <!-- HERO -->
 <main class="container">
 
-<div class="container-fluid">
-  <h1 class="mt-2 p-2 text-center">Nuestros Servicios</h1>
+<div data-aos="fade-up" class="container-fluid">
+  <h1 class="display-5 fw-bold lh-1 mb-3 text-center mt-3">Nuestros Servicios</h1>
   <p class="fs-5 text-center">Obtén información clara y precisa sobre tu salud con nuestros servicios de análisis clínicos a domicilio. Nuestro equipo de profesionales altamente capacitados te brindará la comodidad y la flexibilidad que necesitas para cuidar de tu bienestar. ¡Programa tu prueba hoy mismo y obtén los resultados en la comodidad de tu hogar!</p>
 </div>
 
 <!-- SERVICIOS -->
 
 
-    <div class="row featurette mt-2 pt-2">
+    <div data-aos="fade-left" class="row featurette mt-2 pt-2">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Pruebas de diagnóstico</h2>
         <p class="lead">Ofrecemos un amplio rango de pruebas de diagnóstico, desde análisis de sangre y orina hasta estudios de imagenología. Nuestros profesionales altamente capacitados te brindarán un diagnóstico preciso y confiable. </p>
@@ -84,7 +93,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette mt-2 pt-2">
+    <div  data-aos="fade-right" class="row featurette mt-2 pt-2">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Análisis nutricionales</h2>
         <p class="lead">Ofrecemos análisis nutricionales detallados para ayudarte a conocer más sobre tu cuerpo y tu salud. Estos análisis pueden incluir la medición de vitaminas, minerales, y otros nutrientes clave, así como la evaluación de tus necesidades calóricas y de macronutrientes.</p>
@@ -97,7 +106,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette mt-2 pt-2">
+    <div data-aos="fade-left" class="row featurette mt-2 pt-2">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Pruebas de detección temprana</h2>
         <p class="lead">Ofrecemos pruebas de detección temprana para enfermedades crónicas como el cáncer y las enfermedades cardíacas. Estas pruebas pueden ayudarte a detectar signos tempranos de enfermedades antes de que se conviertan en problemas graves.</p>
@@ -112,24 +121,7 @@
 
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- FOOTER -->
-
 
 <div class="container-fluid">
     <footer class="py-5">
@@ -179,21 +171,17 @@
 </main>
 
   <div class="botonWhatsApp">
-    <a href="https://api.whatsapp.com/send?phone=+5539382819" target="_blank"><img src="/img/logoWhatsapp.png" alt="Link a WhatsApp"></a>
+    <a href="https://wa.link/q5fznt" target="_blank"><img src="/img/logoWhatsapp.png" alt="Link a WhatsApp"></a>
 </div>
-  
-
-
-
-
-
-
-
-
-
-
 
 <!-- JAVASCRIPT -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<!-- JS AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
   </body>
 </html>

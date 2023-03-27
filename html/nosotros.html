@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="En IMA somos un equipo de expertos en laboratorios que ofrecemos un servicio a domicilio para tus estudios médicos. Conoce nuestra historia y nuestra pasión por la salud y el bienestar de nuestros pacientes.">
+    <meta
+      name="description"
+      content="En IMA somos un equipo de expertos en laboratorios que ofrecemos un servicio a domicilio para tus estudios médicos. Conoce nuestra historia y nuestra pasión por la salud y el bienestar de nuestros pacientes."
+    />
 
     <title>Acerca de Nosotros - IMA</title>
     <!-- BOOTSTRAP -->
@@ -22,6 +25,15 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css" />
+
+    <!-- LIBRERÍA AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+
   </head>
   <body class="container-fluid bg-light">
     <!-- BARRA DE PROMOCIONES -->
@@ -79,15 +91,18 @@
 
     <!-- HERO -->
     <main class="container-md">
-      <div>
+      <div data-aos="fade-up">
         <h1 class="display-5 fw-bold lh-1 mb-3 text-center mt-3">
-          Acerca de nosotros
+          Descubre cómo IMA está cambiando la forma en que cuidas de tu salud.
         </h1>
-        <p class="fs-5 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta dolorem at natus quam saepe. Quas nihil nulla vel incidunt reprehenderit amet eos dolorum quia et, tempora delectus dolores, magni quae!</p>
+        <p class="fs-5 text-center">
+          Nuestra misión es ofrecerte servicios de análisis clínicos confiables,
+          convenientes y personalizados.
+        </p>
       </div>
 
-      <div class="container-fluid col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div data-aos="fade-left" class="container col-xxl-8 px-1 py-1">
+        <div class="row flex-lg-row-reverse align-items-center g-3 py-3">
           <div class="col-10 col-sm-8 col-lg-6">
             <iframe
               width="560"
@@ -101,34 +116,40 @@
           </div>
           <div class="col-lg-6">
             <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
-              quibusdam consectetur praesentium, est earum vel officiis
-              assumenda! Tenetur, ad a culpa eius est, ducimus nobis fugiat
-              tempore aliquid magnam architecto beatae vel totam exercitationem
-              aut perferendis repudiandae eligendi eum rerum cumque. Ab neque
-              quisquam officiis deleniti magni ipsam nobis aliquid at maiores
-              eveniet aspernatur, omnis delectus, eum harum fugiat dolor sint!
-              Deleniti doloremque autem animi voluptatibus illo ea, corrupti
-              dicta?
+              En IMA, creemos que cuidar de tu salud debe ser fácil y accesible.
+              Por eso, ofrecemos una amplia variedad de pruebas y análisis
+              clínicos a domicilio, con un equipo de profesionales altamente
+              capacitados que se encargan de todo el proceso para que tú puedas
+              enfocarte en lo que realmente importa: tu bienestar.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="">
-        <p class="display-6 fw-semibold lh-1 mb-3 text-center mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat maxime porro fugit autem sequi error voluptatum sed molestias quibusdam iure, voluptas odio qui, enim mollitia totam eligendi fuga at?
+      <div data-aos="fade-right" class="">
+        <p class="display-6 fw-semibold lh-1 mb-5 text-center mt-3">
+          Si deseas obtener más información sobre nuestros servicios y cómo
+          podemos ayudarte a cuidar de tu salud, ¡contáctanos hoy mismo para
+          programar una consulta gratuita! Estamos aquí para ayudarte en todo lo
+          que necesites.
         </p>
         <div class="d-flex justify-content-center">
-        <button type="button" class="btn boton_primario btn-lg px-4 me-md-2 text-center">Agenda tu cita</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Conoce más</button>
-      </div>
+          <button
+            type="button"
+            class="btn boton_primario btn-lg px-4 me-md-2 text-center"
+          >
+            Agenda tu cita
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+            Conoce más
+          </button>
+        </div>
       </div>
 
       <!-- FOOTER -->
 
-      <div class="container-fluid">
-        <footer class="py-5">
+      <div  class="container-fluid">
+        <footer data-aos="fade-up" class="py-5">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Navegación</h5>
@@ -175,8 +196,13 @@
 
             <div class="col-md-5 offset-md-1 mb-3">
               <form>
-                <h5>Únete a nuestro newsletter y cuida de tu salud desde casa</h5>
-            <p>Recibe promociones exclusivas y consejos de prevención de enfermedades directo en tu bandeja de entrada.</p>
+                <h5>
+                  Únete a nuestro newsletter y cuida de tu salud desde casa
+                </h5>
+                <p>
+                  Recibe promociones exclusivas y consejos de prevención de
+                  enfermedades directo en tu bandeja de entrada.
+                </p>
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                   <label for="newsletter1" class="visually-hidden"
                     >Correo Electrónico</label
@@ -223,8 +249,12 @@
         </footer>
       </div>
       <div class="botonWhatsApp">
-        <a href="https://api.whatsapp.com/send?phone=+5539382819" target="_blank"><img src="/img/logoWhatsapp.png" alt="Link a WhatsApp"></a>
-    </div>
+        <a
+          href="https://wa.link/q5fznt"
+          target="_blank"
+          ><img src="/img/logoWhatsapp.png" alt="Link a WhatsApp"
+        /></a>
+      </div>
     </main>
 
     <!-- JAVASCRIPT -->
@@ -233,5 +263,11 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JS AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
 </html>

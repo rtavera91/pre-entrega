@@ -13,177 +13,329 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css" />
+
+    <!-- LIBRERÍA AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+
   </head>
   <body class="container-fluid bg-light">
-
     <!-- BARRA DE PROMOCIONES -->
     <header class="container-fluid p-2 mt-0">
-        <p class="text-center m-1 barra-nav fs-6">Descuento de lanzamiento de 15% OFF</p>
-
+      <p class="text-center m-1 barra-nav fs-6">
+        Descuento de lanzamiento de 15% OFF
+      </p>
     </header>
 
     <!-- BARRA DE NAVEGACIÓN -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-0 sticky-top shadow-sm bg-body-tertiary rounded">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo-png.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary mb-0 sticky-top shadow-sm bg-body-tertiary rounded"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"
+          ><img class="logo" src="../img/logo-png.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresas.html">Empresas</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn boton_primario btn-lg fs-6" href="contacto.html"
+                >Agenda tu cita</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+
+    <main class="container-md">
+      <div data-aos="fade-up"class="container-fluid">
+        <h1 class="mt-2 p-2 text-center">
+          Mejora la salud de tus empleados con nuestros servicios de análisis
+          clínicos a domicilio
+        </h1>
+        <p class="fs-5 text-center">
+          Ofrecemos un servicio profesional, rápido y amigable para garantizar
+          la tranquilidad de tus empleados.
+        </p>
+      </div>
+
+      <!-- SECCIÓN DE LOGOS DE CREDIBILIDAD -->
+
+      <div data-aos="fade-left" class="container bg-empresas p-2">
+        <h2 class="mt-2 p-2 text-center">Quienes han confiando en nosotros</h2>
+        <div class="d-flex justify-content-around">
+          <i class="bi bi-google h2"></i>
+          <i class="bi bi-twitter h2"></i>
+          <i class="bi bi-facebook h2"></i>
+          <i class="bi bi-slack h2"></i>
+        </div>
+      </div>
+
+      <!-- SECCIÓN DE FORMULARIO PARA EMPRESAS -->
+      <div data-aos="fade-right" class="container me-auto ms-auto mt-5">
+        <h2 class="pb-2 border-bottom text-center">
+          Contáctanos para más información y programar una visita para tu
+          empresa
+        </h2>
+
+        <form class="mt-5">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Correo Electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              Nunca compartiremos tu correo con nadie.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="Nombre" class="form-label"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="Nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Apellido" class="form-label"
+              >Apellido</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="Apellido"
+            />
+            <div class="my-3">
+              <label for="Telefono" class="form-label"
+                >Teléfono de Contacto</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="Telefono"
+              />
+          </div>
+          <div class="my-3">
+            <label for="Empresa" class="form-label"
+              >Nombre de la Empresa</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="Empresa"
+            />
+            <div class="my-3">
+              <label for="Direccion" class="form-label"
+                >Dirección de la Empresa</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="Dirección"
+              />
+              <div class="my-3 form-label">
+              <label class="form-label">Número de empleados</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Selecciona una opción</option>
+                <option value="1">1 a 5 personas</option>
+                <option value="2">5 a 50 personas</option>
+                <option value="3">más de 50 personas</option>
+              </select>
+            </div>
+
+            <div class="my-3 form-label">
+              <label class="form-label">Tipo de Servicio</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Selecciona una opción</option>
+                <option value="1">Programa de Vacunación</option>
+                <option value="2">Análisis de Diagnóstico</option>
+                <option value="3">Análisis Nutricionales</option>
+                <option value="3">Pruebas Anti-doping</option>
+              </select>
+            </div>
+
+          <!-- SUSCRIBIRSE AL NEWSLETTER -->
+          <div class="my-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >¿Te gustaría suscribirte al newsletter?</label
+            >
+          </div>
+
+          <!-- BOTÓN ENVIO -->
+          <button type="submit" class="btn boton_primario">
+            Solicita tu cotización
           </button>
-          <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+        </form>
+      </div>
+      <!-- FOOTER -->
+
+      <div class="container-fluid">
+        <footer data-aos="fade-up" class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Navegación</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="../index.html" class="nav-link p-0 text-muted"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="servicios.html" class="nav-link p-0 text-muted"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="nosotros.html" class="nav-link p-0 text-muted"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="contacto.html" class="nav-link p-0 text-muted"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="empresas.html" class="nav-link p-0 text-muted"
+                    >Empresas</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Recursos</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Blog</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Agenda tu cita</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>
+                  Únete a nuestro newsletter y cuida de tu salud desde casa
+                </h5>
+                <p>
+                  Recibe promociones exclusivas y consejos de prevención de
+                  enfermedades directo en tu bandeja de entrada.
+                </p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Correo Electrónico"
+                  />
+                  <button class="btn boton_primario" type="button">
+                    Subscribete
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          >
+            <p>Todos los derechos reservados</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><svg class="bi bi-twitter text-dark" width="24" height="24">
+                    <use xlink:href="#twitter" /></svg
+                ></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><svg class="bi redes" width="24" height="24">
+                    <use xlink:href="#instagram" /></svg
+                ></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Acerca de Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="empresas.html">Empresas</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn boton_primario btn-lg fs-6 " href="contacto.html">Agenda tu cita</a>
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><svg class="bi redes" width="24" height="24">
+                    <use xlink:href="#facebook" /></svg
+                ></a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
-
-<!-- CONTENIDO -->
-
-<main class="container-md">
-
-<div class="container-fluid">
-  <h1 class="mt-2 p-2 text-center">Mejora la salud de tus empleados con nuestros servicios de análisis clínicos a domicilio</h1>
-  <p class="fs-5 text-center">Ofrecemos un servicio profesional, rápido y amigable para garantizar la tranquilidad de tus empleados.</p>
-</div>
-
-<!-- SECCIÓN DE LOGOS DE CREDIBILIDAD -->
-
-<div class="container bg-empresas p-2">
-  <h2 class="mt-2 p-2 text-center">Quienes han confiando en nosotros</h2>
-  <div class="d-flex justify-content-around">
-  <i class="bi bi-google h2"></i>
-  <i class="bi bi-twitter h2"></i>
-  <i class="bi bi-facebook h2"></i>
-  <i class="bi bi-slack h2"></i>
-</div>
-</div>
-
-<!-- SECCIÓN DE FORMULARIO PARA EMPRESAS -->
-<div class="container me-auto ms-auto mt-5">
-<h2 class="pb-2 border-bottom text-center">Contáctanos para más información y programar una visita para tu empresa</h2>
-
-<form class="mt-5">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-
-  <!-- SUSCRIBIRSE AL NEWSLETTER -->
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">¿Te gustaría suscribirte al newsletter?</label>
-  </div>
-
-  <!-- BOTÓN ENVIO -->
-  <button type="submit" class="btn boton_primario">Solicita tu cotización</button>
- 
-</form>
-</div>
-<!-- FOOTER -->
-
-
-<div class="container-fluid">
-    <footer class="py-5">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Navegación</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Inicio</a></li>
-            <li class="nav-item mb-2"><a href="servicios.html" class="nav-link p-0 text-muted">Servicios</a></li>
-            <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Nosotros</a></li>
-            <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
-            <li class="nav-item mb-2"><a href="empresas.html" class="nav-link p-0 text-muted">Empresas</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Recursos</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agenda tu cita</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Únete a nuestro newsletter y cuida de tu salud desde casa</h5>
-            <p>Recibe promociones exclusivas y consejos de prevención de enfermedades directo en tu bandeja de entrada.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electrónico">
-              <button class="btn boton_primario" type="button">Subscribete</button>
-            </div>
-          </form>
-        </div>
+        </footer>
       </div>
-  
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p> Todos los derechos reservados</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi bi-twitter text-dark" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi redes" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi redes" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
+    </main>
+    <div class="botonWhatsApp">
+      <a href="https://wa.link/q5fznt" target="_blank"
+        ><img src="/img/logoWhatsapp.png" alt="Link a WhatsApp"
+      /></a>
+    </div>
 
-</main>
-  <div class="botonWhatsApp">
-    <a href="https://api.whatsapp.com/send?phone=+5539382819" target="_blank"><img src="/img/logoWhatsapp.png" alt="Link a WhatsApp"></a>
-</div>
-  
+    <!-- JAVASCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-
-
-
-
-
-
-
-
-<!-- JAVASCRIPT -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- JS AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
 </html>

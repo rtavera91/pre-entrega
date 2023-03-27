@@ -25,6 +25,16 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css" />
+
+    <!-- LIBRERÍA AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+
   </head>
   <body class="container-fluid bg-light">
     <!-- BARRA DE PROMOCIONES -->
@@ -97,18 +107,7 @@
               comodidad de tu hogar.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button
-                type="button"
-                class="btn boton_primario btn-lg px-4 me-md-2"
-              >
-                Agenda tu cita
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
-              >
-                Conoce más
-              </button>
+              <a class="btn boton_primario btn-lg px-4 me-md-2 fs-5 " href="../html/nosotros.html">Conoce más</a>
             </div>
           </div>
           <div class="col-10 col-sm-8 col-lg-6">
@@ -126,12 +125,16 @@
 
       <!-- FORMULARIO DE CONTACTO Y AGENDA DE CITA -->
 
-      <div class="container-fluid">
+      <div data-aos="fade-left"class="container-fluid">
         <h2 class="mt-2 p-2 text-center">
           Elige el horario que mejor te acomode
         </h2>
         <p class="fs-5 text-center">
-          Elige el horario que mejor te acomode en nuestro calendario y nuestro equipo de profesionales se encargará del resto. Ofrecemos opciones de disponibilidad inmediata si necesitas un análisis urgente. ¡Cuida de tu salud desde la comodidad de tu hogar! Selecciona la fecha y hora que mejor se adapten a tu agenda y déjanos encargarnos del resto.
+          Elige el horario que mejor te acomode en nuestro calendario y nuestro
+          equipo de profesionales se encargará del resto. Ofrecemos opciones de
+          disponibilidad inmediata si necesitas un análisis urgente. ¡Cuida de
+          tu salud desde la comodidad de tu hogar! Selecciona la fecha y hora
+          que mejor se adapten a tu agenda y déjanos encargarnos del resto.
         </p>
       </div>
 
@@ -153,7 +156,7 @@
       <!-- FOOTER -->
 
       <div class="container-fluid">
-        <footer class="py-5">
+        <footer data-aos="fade-up" class="py-5">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Navegación</h5>
@@ -193,7 +196,9 @@
                   <a href="#" class="nav-link p-0 text-muted">Blog</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="/html/contacto.html" class="nav-link p-0 text-muted">Agenda tu cita</a>
+                  <a href="/html/contacto.html" class="nav-link p-0 text-muted"
+                    >Agenda tu cita</a
+                  >
                 </li>
               </ul>
             </div>
@@ -254,7 +259,7 @@
       </div>
       <div class="botonWhatsApp">
         <a
-          href="https://api.whatsapp.com/send?phone=+5539382819"
+          href="https://wa.link/q5fznt"
           target="_blank"
           ><img src="/img/logoWhatsapp.png" alt="Link a WhatsApp"
         /></a>
@@ -266,6 +271,13 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"
       ></script>
+
+      <!-- JS AOS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
     </main>
   </body>
 </html>
